@@ -1,13 +1,21 @@
 import React from 'react';
-import { StackNavigator, createAppContainer, createStackNavigator } from 'react-navigation';
-import Home from './pages/Home'
-import Perfil from './pages/Perfil'
-import Posts from './pages/Posts'
+import { ScrollView, View } from 'react-native';
 
-const App = StackNavigator({  
-  Home: {screen: Home},
-  Perfil: {screen: Perfil},
-  Posts: {screen:Posts}
-})
+import './config/ReactotronConfig';
+import SubHeader from './components/SubHeader';
+// import ProductList from './components/ProductList';
+// import Tabs from './components/Tabs';
+import Header from './components/Header';
 
-export default App;
+const App = () => (
+  <View style={{ flex: 1, backgroundColor: '#F8F8FA' }}>
+    <Header />
+    <ScrollView>
+      <SubHeader />
+      {/* <ProductList /> */}
+    </ScrollView>
+    {/* <Tabs /> */}
+  </View>
+);
+
+export default console.tron.overlay(App);
