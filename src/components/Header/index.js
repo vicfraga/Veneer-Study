@@ -10,7 +10,7 @@ import styles from './styles';
 const Header = () => (
   <View style={styles.container}>
     <Icon name="ios-arrow-back" size={24} style={styles.icon} />
-    <Text style={styles.title}>Profile</Text>
+    <Text style={styles.title}>tomholland2013</Text>
     <Icon name="ios-more" size={24} style={styles.icon} />
   </View>
 );

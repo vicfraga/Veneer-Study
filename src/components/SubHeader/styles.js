@@ -4,7 +4,7 @@ import { colors, fonts, metrics } from '../../styles';
 const styles = StyleSheet.create({
   container: {
     padding: metrics.padding,
-    backgroundColor: '#FFF',
+    backgroundColor: colors.primary,
     borderBottomWidth: 1,
     borderColor: colors.lighter,
   },
@@ -25,6 +25,14 @@ const styles = StyleSheet.create({
   },
 
   name: {
+    fontWeight: 'bold',
+    fontSize: fonts.big,
+    color: colors.darker,
+    marginTop: 5,
+  },
+  info: {
+    flexDirection: 'row',
+    padding: metrics.padding,
     fontWeight: 'bold',
     fontSize: fonts.big,
     color: colors.darker,

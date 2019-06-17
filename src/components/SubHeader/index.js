@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 
 /* Presentational */
-import { View, Text, Image, TouchableOpacity } from "react-native";
+import { View, Text, Image, TouchableOpacity, ListView } from "react-native";
 import Button from "../button";
 import Icon from "react-native-vector-icons/Ionicons";
 
@@ -29,7 +29,10 @@ class SubHeader extends Component {
           />
 
           <View style={styles.profileInfo}>
-            <Text style={styles.name}>Tom Holland</Text>
+            
+            <Text style={styles.info}> </Text>
+            <Text style={styles.info}>22M</Text>
+            <Text style={styles.info}>249</Text>
             <Text style={styles.bio}>
               homem aranha / melhor amigo da vizinhança e melhor heroi da
               marvel.
@@ -38,7 +41,7 @@ class SubHeader extends Component {
             <View style={styles.buttonContainer}>
               <Button style={styles.firstButton}>mensagem</Button>
               <TouchableOpacity
-                style={[buttonstyle.container, buttonstyle[`button-outline`]]}
+                style={[buttonstyle.container]}
                 onPress={() => {
                     this.setState((state) => {
                         return {following: !state.following};

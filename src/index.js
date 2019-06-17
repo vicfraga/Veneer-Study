@@ -3,7 +3,7 @@ import { ScrollView, View } from 'react-native';
 
 import './config/ReactotronConfig';
 import SubHeader from './components/SubHeader';
-// import ProductList from './components/ProductList';
+import PostList from './components/PostList';
 // import Tabs from './components/Tabs';
 import Header from './components/Header';
 
@@ -12,7 +12,7 @@ const App = () => (
     <Header />
     <ScrollView>
       <SubHeader />
-      {/* <ProductList /> */}
+      <PostList />
     </ScrollView>
     {/* <Tabs /> */}
   </View>

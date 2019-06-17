@@ -4,11 +4,14 @@ import { colors, fonts } from '../../styles';
 const styles = StyleSheet.create({
   container: {
     height: 31,
-    backgroundColor: colors.primary,
+    //backgroundColor: 'rgb(29, 161, 242)',
     borderRadius: 30,
     justifyContent: 'center',
     alignItems: 'center',
     paddingHorizontal: 20,
+    borderWidth: 1,
+    borderColor: 'rgb(29, 161, 242)',
+
   },
 
   'button-outline': {
@@ -18,7 +21,7 @@ const styles = StyleSheet.create({
   },
 
   text: {
-    color: '#FFF',
+    color: 'rgb(29, 161, 242)',
     fontWeight: 'bold',
     fontSize: fonts.small,
   },
@@ -28,7 +31,7 @@ const styles = StyleSheet.create({
   },
 
   'icon-outline': {
-    color: colors.primary,
+    color: 'rgb(29, 161, 242)',
     fontSize:25,
   },
 });
