@@ -14,6 +14,10 @@ const styles = StyleSheet.create({
 
   },
 
+  space: {
+    marginLeft:10,
+  },
+
   'button-outline': {
     backgroundColor: '#FFF',
     borderWidth: 1,

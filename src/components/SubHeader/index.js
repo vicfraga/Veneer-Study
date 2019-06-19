@@ -12,11 +12,11 @@ import buttonstyle from "../button/styles";
 
 class SubHeader extends Component {
   state = {
-      following: false,
+    following: false
   };
 
   render() {
-    const nameIcon = (this.state.following) ? 'ios-checkmark' : 'ios-person-add';
+    const nameIcon = this.state.following ? "ios-checkmark" : "ios-person-add";
     return (
       <View style={styles.container}>
         <View style={styles.profileContainer}>
@@ -29,23 +29,29 @@ class SubHeader extends Component {
           />
 
           <View style={styles.profileInfo}>
-            
-            <Text style={styles.info}> </Text>
-            <Text style={styles.info}>22M</Text>
-            <Text style={styles.info}>249</Text>
-            <Text style={styles.bio}>
-              homem aranha / melhor amigo da vizinhança e melhor heroi da
-              marvel.
-            </Text>
+            <View style={styles.numbers}>
+              <View style={styles.numbersItem}>
+                <Text style={styles.info}>100</Text>
+                <Text style={styles.bio}>Publicações</Text>
+              </View>
+              <View style={styles.numbersItem}>
+                <Text style={styles.info}>22M</Text>
+                <Text style={styles.bio}>Seguidores</Text>
+              </View>
+              <View style={styles.numbersItem}>
+                <Text style={styles.info}>249</Text>
+                <Text style={styles.bio}>Seguindo</Text>
+              </View>
+            </View>
 
             <View style={styles.buttonContainer}>
               <Button style={styles.firstButton}>mensagem</Button>
               <TouchableOpacity
                 style={[buttonstyle.container]}
                 onPress={() => {
-                    this.setState((state) => {
-                        return {following: !state.following};
-                    })
+                  this.setState(state => {
+                    return { following: !state.following };
+                  });
                 }}
               >
                 <Icon
@@ -53,7 +59,18 @@ class SubHeader extends Component {
                   style={[buttonstyle.text, buttonstyle[`icon-outline`]]}
                 />
               </TouchableOpacity>
+
+              <TouchableOpacity style={[buttonstyle.container, buttonstyle.space]}>
+                <Icon
+                  name={'ios-arrow-down'}
+                  style={[buttonstyle.text, buttonstyle[`icon-outline`]]}
+                />
+              </TouchableOpacity>
             </View>
+            <Text style={styles.bio}>
+              homem aranha / melhor amigo da vizinhança e melhor heroi da
+              marvel.
+            </Text>
           </View>
         </View>
       </View>

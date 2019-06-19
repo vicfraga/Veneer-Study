@@ -6,11 +6,31 @@ const styles = StyleSheet.create({
     padding: metrics.padding,
     backgroundColor: colors.primary,
     borderBottomWidth: 1,
-    borderColor: colors.lighter,
+    borderColor: colors.dark,
   },
-
+  containerIcon:{
+  backgroundColor: colors.primary,
+  height: metrics.tabBarHeight,
+  paddingHorizontal: metrics.padding,
+  flexDirection: 'row',
+  justifyContent: 'space-around',
+  alignItems: 'center',
+  borderTopWidth: 1,
+  borderColor: colors.dark,
+  },
   profileContainer: {
     flexDirection: 'row',
+
+  },
+
+  numbers: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+  },
+
+  numbersItem: {
+    justifyContent:'center',
+    alignItems:'center'
   },
 
   avatar: {
@@ -22,6 +42,8 @@ const styles = StyleSheet.create({
 
   profileInfo: {
     flex: 1,
+    paddingLeft:20,
+    paddingBottom:10
   },
 
   name: {
@@ -35,23 +57,31 @@ const styles = StyleSheet.create({
     padding: metrics.padding,
     fontWeight: 'bold',
     fontSize: fonts.big,
-    color: colors.darker,
+    color: colors.white,
     marginTop: 5,
   },
 
   bio: {
     fontSize: fonts.regular,
-    color: colors.regular,
+    color: colors.white,
     marginTop: 5,
   },
 
   buttonContainer: {
     flexDirection: 'row',
     marginTop: 10,
+    alignItems:'center',
+    justifyContent:'center',
+    // paddingLeft:90
   },
 
   firstButton: {
     marginRight: 10,
+  },
+  icon:{
+    flexDirection: 'row',
+    marginTop: 10,
+    
   },
 });
 

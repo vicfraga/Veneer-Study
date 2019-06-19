@@ -5,14 +5,10 @@ const { width } = Dimensions.get('window');
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: colors.primary,
-    borderRadius: 3,
-    width: (width - 45) / 2,
-    marginBottom: metrics.padding,
-    shadowColor: colors.light,
-    shadowRadius: 2,
-    shadowOpacity: 0.1,
-    shadowOffset: { x: 0, y: 0 },
+    backgroundColor: 'white',
+    //borderWidth: 1,
+    //borderColor: 'pink',
+    width: (width - 10) / 3,
     alignSelf: 'flex-start',
   },
 
@@ -25,7 +21,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1,
     shadowOffset: { x: 0, y: 0 },
     alignSelf: 'flex-start',
-    width: (width - 45)
+    width: (width)
   },
 
   checkIcon: {
@@ -37,13 +33,20 @@ const styles = StyleSheet.create({
   },
 
   imageContainer: {
-    padding: metrics.padding,
+   //padding: metrics.padding,
   },
 
   image: {
     width: '100%',
-    height: 300,
-    resizeMode: 'contain',
+    height: 150,
+    //resizeMode: 'contain',
+  },
+
+  modoImage: {
+    width: width,
+    height: 400,
+    //height:'100%',
+    resizeMode: 'cover',
   },
 
   infoContainer: {

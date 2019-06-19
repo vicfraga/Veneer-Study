@@ -37,6 +37,21 @@ export default class PostList extends Component {
         id: 6,
         image:
           "https://i.pinimg.com/originals/86/18/d2/8618d2a5ec9da216367e351864527f92.jpg"
+      }, 
+      {
+        id: 7,
+        image:
+          "https://www.thefashionisto.com/wp-content/uploads/2017/08/Tom-Holland-2017-The-Rake-Turkey-Photo-Shoot-001.jpg"
+      },
+      {
+        id: 8,
+        image:
+          "https://gq-images.condecdn.net/image/OAjjxdV1NBY/crop/1020/f/SHOT_6_067_02_CMYK-gq-28jun17-carter-smith_b.jpg"
+      },
+      {
+        id: 9,
+        image:
+          "http://pm1.narvii.com/7174/f572c15c33247eaf35c0bbfd29c1730414cac0d8r1-968-645v2_uhq.jpg"
       },
     ]
   };

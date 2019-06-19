@@ -9,13 +9,13 @@ container:{
     paddingTop: metrics.headerPadding,
     paddingHorizontal: metrics.padding,
     borderBottomWidth: 1,
-    borderColor: 'pink',
+    borderColor: colors.dark,
     justifyContent: 'space-between',
     flexDirection: 'row',
     alignItems:'center',
 },
 icon:{
-    color: colors.darker,
+    color: colors.white,
 },
 title:{
     fontSize: fonts.big,
